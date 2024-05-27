@@ -3,12 +3,204 @@
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
         <script src="parallax.js"></script>
-        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link rel="stylesheet" href="mycss/player.css" />
         <title>Arknights</title>
-        <style>
+    </head>
+    <body>
+        <div id="wrap">
+        <div id="opwrap">
+            <div class="opening">
+                <img class="opbg1" src="myimgs/intro.png" />
+                <div class="twrap">
+                    <img class="t1" src="myimgs/title1.png" />
+                    <img class="t2" src="myimgs/title2.png" />
+                    <img class="t3" src="myimgs/title3.png" />
+                    <img class="t4" src="myimgs/title4.png" />
+                </div>
+            </div>
+        </div>
+        <div id="rightwrap">
+            <div class="menu1">
+                <div id="scene1">
+                    <div class="layer" data-depth=".3">
+                        <img class="img1" src="myimgs/group 4.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="menu2">
+                <div id="scene2">
+                    <div class="layer" data-depth=".3">
+                        <img class="img2" src="myimgs/group 5.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="menu3">
+                <div id="scene3">
+                    <div class="layer" data-depth=".3">
+                        <img class="img3" src="myimgs/group 8.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="menu4">
+                <div id="scene4">
+                    <div class="layer" data-depth=".3">
+                        <img class="img4" src="myimgs/group 11.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="menu5">
+                <div id="scene5">
+                    <div class="layer" data-depth=".3">
+                        <img class="img5" src="myimgs/group 12.png" />
+                        <!-- <div class="timewrap">
+                            <p class="seconds"></p>
+                            <p class="dot1">:</p>
+                            <p class="minutes"></p>
+                            <p class="dot2">:</p>
+                            <p class="hours"></p>
+                            </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="menu6" data-depth=".2">
+                <div id="scene6">
+                    <div class="layer" data-depth=".3">
+                        <img class="img6" src="myimgs/group 13.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="menu7" data-depth=".2">
+                <div id="scene7">
+                    <div class="layer" data-depth=".3">
+                        <img class="img7" src="myimgs/group 14.png" />
+                        <!-- <div class="timewrap2">
+                            <p class="seconds2"></p>
+                            <p class="dot3">:</p>
+                            <p class="minutes2"></p>
+                            <p class="dot4">:</p>
+                            <p class="hours2"></p>
+                            </div> -->
+                        <div class="bar1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu8">
+                <div id="scene8">
+                    <div class="layer" data-depth=".3">
+                        <img class="img8" src="myimgs/group 15.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="menu16">
+                <div id="scene9">
+                    <div class="layer" data-depth=".3">
+                        <img class="img16" src="myimgs/group 27.png" />
+                        <img class="img17" src="myimgs/group 28.png" />
+                        <div class="timewrap3">
+                            <div id="time">
+                                <p class="date1"></p>
+                                <p class="date2"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div id="leftwrap">
+                <div class="menu9">
+                    <div id="scene10">
+                        <div class="layer" data-depth=".3">
+                            <div id="slideshow">
+                                <img src="myimgs/news 1.png" />
+                                <img src="myimgs/news 3.png" />
+                                <img src="myimgs/news 2.png" />
+                                <img src="myimgs/news 4.png" />
+                            </div>
+                            <div id="slidenav">
+                                <div class="nav1"></div>
+                            </div>
+                            <div id="title">
+                                <img class="img9" src="myimgs/group 17 (2).png" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu10">
+                    <div id="scene11">
+                        <div class="layer" data-depth=".3">
+                            <img class="img10" src="myimgs/group 18.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="menu11">
+                    <div id="scene12">
+                        <div class="layer" data-depth=".3">
+                            <img class="img11" src="myimgs/group 19.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="menu12">
+                    <div id="scene13">
+                        <div class="layer" data-depth=".3">
+                            <img class="img12" src="myimgs/group 22 (2).png" />
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="menu13">
+                    <img class="img13" src="myimgs/group 24.png" />
+                    </div> -->
+                <div class="menu14">
+                    <div id="scene14">
+                        <div class="layer" data-depth=".3">
+                            <img class="img14" src="myimgs/img007.png" />
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="menu15">
+                    <img class="img15" src="myimgs/group 26.png" />
+                    </div> -->
+                <!-- <div class="menu17">
+                    <img class="kor" src="myimgs/Kor.png" />
+                    <img class="eng" src="myimgs/Eng.png" />
+                    <img class="shape1" src="myimgs/shape 14.png" />
+                    </div> -->
+            </div>
+        <div id="bgwrap">
+            <div id="backbg"></div>
+            <img class="back1" src="myimgs/1.png" />
+            <img class="back2" src="myimgs/2.png" />
+            <img class="back3" src="myimgs/3.png" />
+            <img class="back4" src="myimgs/4.png" />
+            <img class="back5" src="myimgs/5.png" />
+        </div>
+        <div class="container">
+            <div class="column add-bottom">
+                <div id="scene15">
+                    <div class="layer" data-depth=".3">
+                    <div id="mainwrap">
+                        <div id="nowPlay">
+                            <span class="left" id="npAction">Paused...</span>
+                            <span class="right" id="npTitle"></span>
+                        </div>
+                        <div id="audiowrap">
+                            <div id="audio0">
+                                <audio preload id="audio1" controls="controls" loop>Your browser does not support HTML5 Audio!</audio>
+                            </div>
+                        </div>
+                        <div id="plwrap">
+                            <ul id="plList"></ul>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        <div id="extra"></div>
+    </body>
+            <style>
             body {
             background-image: url("myimgs/4.png");
             background-repeat: no-repeat;
@@ -1137,198 +1329,6 @@
                 }
             });
         </script>
-    </head>
-    <body>
-        <div id="wrap">
-        <div id="opwrap">
-            <div class="opening">
-                <img class="opbg1" src="myimgs/intro.png" />
-                <div class="twrap">
-                    <img class="t1" src="myimgs/title1.png" />
-                    <img class="t2" src="myimgs/title2.png" />
-                    <img class="t3" src="myimgs/title3.png" />
-                    <img class="t4" src="myimgs/title4.png" />
-                </div>
-            </div>
-        </div>
-        <div id="rightwrap">
-            <div class="menu1">
-                <div id="scene1">
-                    <div class="layer" data-depth=".3">
-                        <img class="img1" src="myimgs/group 4.png" />
-                    </div>
-                </div>
-            </div>
-            <div class="menu2">
-                <div id="scene2">
-                    <div class="layer" data-depth=".3">
-                        <img class="img2" src="myimgs/group 5.png" />
-                    </div>
-                </div>
-            </div>
-            <div class="menu3">
-                <div id="scene3">
-                    <div class="layer" data-depth=".3">
-                        <img class="img3" src="myimgs/group 8.png" />
-                    </div>
-                </div>
-            </div>
-            <div class="menu4">
-                <div id="scene4">
-                    <div class="layer" data-depth=".3">
-                        <img class="img4" src="myimgs/group 11.png" />
-                    </div>
-                </div>
-            </div>
-            <div class="menu5">
-                <div id="scene5">
-                    <div class="layer" data-depth=".3">
-                        <img class="img5" src="myimgs/group 12.png" />
-                        <!-- <div class="timewrap">
-                            <p class="seconds"></p>
-                            <p class="dot1">:</p>
-                            <p class="minutes"></p>
-                            <p class="dot2">:</p>
-                            <p class="hours"></p>
-                            </div> -->
-                    </div>
-                </div>
-            </div>
-            <div class="menu6" data-depth=".2">
-                <div id="scene6">
-                    <div class="layer" data-depth=".3">
-                        <img class="img6" src="myimgs/group 13.png" />
-                    </div>
-                </div>
-            </div>
-            <div class="menu7" data-depth=".2">
-                <div id="scene7">
-                    <div class="layer" data-depth=".3">
-                        <img class="img7" src="myimgs/group 14.png" />
-                        <!-- <div class="timewrap2">
-                            <p class="seconds2"></p>
-                            <p class="dot3">:</p>
-                            <p class="minutes2"></p>
-                            <p class="dot4">:</p>
-                            <p class="hours2"></p>
-                            </div> -->
-                        <div class="bar1"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="menu8">
-                <div id="scene8">
-                    <div class="layer" data-depth=".3">
-                        <img class="img8" src="myimgs/group 15.png" />
-                    </div>
-                </div>
-            </div>
-            <div class="menu16">
-                <div id="scene9">
-                    <div class="layer" data-depth=".3">
-                        <img class="img16" src="myimgs/group 27.png" />
-                        <img class="img17" src="myimgs/group 28.png" />
-                        <div class="timewrap3">
-                            <div id="time">
-                                <p class="date1"></p>
-                                <p class="date2"></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-            <div id="leftwrap">
-                <div class="menu9">
-                    <div id="scene10">
-                        <div class="layer" data-depth=".3">
-                            <div id="slideshow">
-                                <img src="myimgs/news 1.png" />
-                                <img src="myimgs/news 3.png" />
-                                <img src="myimgs/news 2.png" />
-                                <img src="myimgs/news 4.png" />
-                            </div>
-                            <div id="slidenav">
-                                <div class="nav1"></div>
-                            </div>
-                            <div id="title">
-                                <img class="img9" src="myimgs/group 17 (2).png" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="menu10">
-                    <div id="scene11">
-                        <div class="layer" data-depth=".3">
-                            <img class="img10" src="myimgs/group 18.png" />
-                        </div>
-                    </div>
-                </div>
-                <div class="menu11">
-                    <div id="scene12">
-                        <div class="layer" data-depth=".3">
-                            <img class="img11" src="myimgs/group 19.png" />
-                        </div>
-                    </div>
-                </div>
-                <div class="menu12">
-                    <div id="scene13">
-                        <div class="layer" data-depth=".3">
-                            <img class="img12" src="myimgs/group 22 (2).png" />
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="menu13">
-                    <img class="img13" src="myimgs/group 24.png" />
-                    </div> -->
-                <div class="menu14">
-                    <div id="scene14">
-                        <div class="layer" data-depth=".3">
-                            <img class="img14" src="myimgs/img007.png" />
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="menu15">
-                    <img class="img15" src="myimgs/group 26.png" />
-                    </div> -->
-                <!-- <div class="menu17">
-                    <img class="kor" src="myimgs/Kor.png" />
-                    <img class="eng" src="myimgs/Eng.png" />
-                    <img class="shape1" src="myimgs/shape 14.png" />
-                    </div> -->
-            </div>
-        <div id="bgwrap">
-            <div id="backbg"></div>
-            <img class="back1" src="myimgs/1.png" />
-            <img class="back2" src="myimgs/2.png" />
-            <img class="back3" src="myimgs/3.png" />
-            <img class="back4" src="myimgs/4.png" />
-            <img class="back5" src="myimgs/5.png" />
-        </div>
-        <div class="container">
-            <div class="column add-bottom">
-                <div id="scene15">
-                    <div class="layer" data-depth=".3">
-                    <div id="mainwrap">
-                        <div id="nowPlay">
-                            <span class="left" id="npAction">Paused...</span>
-                            <span class="right" id="npTitle"></span>
-                        </div>
-                        <div id="audiowrap">
-                            <div id="audio0">
-                                <audio preload id="audio1" controls="controls" loop>Your browser does not support HTML5 Audio!</audio>
-                            </div>
-                        </div>
-                        <div id="plwrap">
-                            <ul id="plList"></ul>
-                        </div>
-                    </div>
-                </div>
-                    </div>
-                </div>
-            </div>
-        <div id="extra"></div>
-    </body>
     <script>
         var scene1 = document.getElementById("scene1");
         var parallaxInstance1 = new Parallax(scene1);
