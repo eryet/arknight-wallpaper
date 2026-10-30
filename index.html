@@ -199,14 +199,46 @@
                 </div>
             </div>
         <div id="extra"></div>
+        </div>
+        <script>
+            // Scale the 1920x1080 layout to the screen: 1080p = 1x, 1440p = 1.33x, 4K = 2x.
+            // On non-16:9 screens the stage is widened/heightened so it still fills the screen.
+            function fitStage() {
+                var scale = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+                var stage = document.getElementById("wrap");
+                stage.style.width = window.innerWidth / scale + "px";
+                stage.style.height = window.innerHeight / scale + "px";
+                stage.style.transform = "scale(" + scale + ")";
+            }
+            fitStage();
+            window.addEventListener("resize", fitStage);
+        </script>
     </body>
             <style>
+            html,
+            body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            }
             body {
             background-image: url("myimgs/4.png");
             background-repeat: no-repeat;
-            background-size: cover cover;
+            background-size: cover;
+            background-position: center;
             overflow: hidden;
             transition: 1s;
+            }
+            /* All positions below are in 1920x1080 design pixels; fitStage() scales #wrap to the screen. */
+            #wrap {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 1920px;
+            height: 1080px;
+            padding: 8px; /* the old default body margin that the layout was tuned with */
+            box-sizing: border-box;
+            transform-origin: 0 0;
             }
             #extra {
             position: fixed;
@@ -233,8 +265,10 @@
             right: 0;
             }
             .opbg1 {
-            width: cover;
-            height: cover;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             opacity: 0;
             }
             .menu1 {
